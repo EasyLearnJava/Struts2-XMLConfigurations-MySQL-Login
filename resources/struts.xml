@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+	<constant name="struts.custom.i18n.resources" value="com.easylearnjava.properties.message" />
+
+	<!-- Declare all the actions -->
+	<package name="default" extends="struts-default" namespace="/">
+		<action name="login" class="com.easylearnjava.action.LoginAction">
+			<result name="success">loginSuccess.jsp</result>
+			<result name="failure">login.jsp</result>
+		</action>
+		
+		<action name="logout" class="com.easylearnjava.action.LogoutAction">
+			<result name="success">login.jsp</result>
+		</action>
+	</package>
+</struts>
