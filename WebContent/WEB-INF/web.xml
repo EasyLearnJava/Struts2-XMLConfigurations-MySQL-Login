@@ -11,7 +11,7 @@
 	  	<filter-class>org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter</filter-class>
 	 </filter>
 	 
-	 <!-- Check for the url pattern *.action (login.action, logout.action, register.action ...) -->
+	 <!-- Check for valid url pattern -->
 	 <filter-mapping>
 	  	<filter-name>struts2Filter</filter-name>
 	  	<url-pattern>/*</url-pattern>
